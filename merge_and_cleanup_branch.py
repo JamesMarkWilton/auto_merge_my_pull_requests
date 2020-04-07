@@ -97,7 +97,7 @@ if __name__ == '__main__':
 
     pr_user = pr_data["user"]["login"]
     print(f"*** This PR was opened by {pr_user}")
-    if pr_user != "svc-eng-github":
+    if pr_user != "JamesMarkWilton":
         print("*** This PR was opened by someone other then our SmartLing Integration User and it requires a manual merge")
         neutral_exit()
 
