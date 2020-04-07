@@ -10,6 +10,6 @@ LABEL "com.github.actions.color"="green"
 COPY requirements.txt /requirements.txt
 RUN	pip3 install -r /requirements.txt
 
-COPY merge_and_cleanup_branch.py /merge_and_cleanup_branch.py
+COPY merge_and_cleanup.py /merge_and_cleanup.py
 
-ENTRYPOINT ["python3", "/merge_and_cleanup_branch.py"]
+ENTRYPOINT ["python3", "/merge_and_cleanup.py"]
